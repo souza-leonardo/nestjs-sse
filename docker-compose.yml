@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: node:20
+    working_dir: /app
+    command: ["npm", "run", "start:dev"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app:delegated
